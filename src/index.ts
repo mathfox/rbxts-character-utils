@@ -7,7 +7,7 @@ export function getHumanoidFromPlayer(player: Player) {
 	const character = player.Character;
 	if (!character) return;
 
-	return character.FindFirstAncestorOfClass("Humanoid");
+	return character.FindFirstChildOfClass("Humanoid");
 }
 
 export function getRootPartFromPlayer(player: Player) {
