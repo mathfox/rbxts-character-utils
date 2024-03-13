@@ -1,12 +1,16 @@
 {
     "name": "@rbxts/character-utils",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "A set of helpful utils.",
     "main": "out/init.lua",
     "scripts": {
         "build": "rbxtsc",
         "watch": "rbxtsc -w",
         "prepublishOnly": "npm run build"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/mathfox/rbxts-character-utils.git"
     },
     "keywords": [
         "character-utils",
@@ -15,7 +19,10 @@
         "humanoid",
         "utils"
     ],
-    "author": "Ivan Leontev",
+    "author": {
+        "name": "Ivan Leontev",
+        "url": "https://github.com/mathfox"
+    },
     "license": "MIT",
     "types": "out/index.d.ts",
     "files": [
@@ -25,6 +32,10 @@
     "publishConfig": {
         "access": "public"
     },
+    "bugs": {
+        "url": "https://github.com/mathfox/rbxts-character-utils/issues"
+    },
+    "homepage": "https://github.com/mathfox/rbxts-character-utils#readme",
     "devDependencies": {
         "@rbxts/compiler-types": "^2.3.0-types.0",
         "@rbxts/types": "^1.0.761",
