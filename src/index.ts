@@ -1,3 +1,5 @@
+import { Players } from "@rbxts/services";
+
 export function getRootPartFromCharacter(character: Model) {
 	const humanoid = character.FindFirstChildOfClass("Humanoid");
 	return humanoid?.RootPart;
@@ -133,4 +135,11 @@ export function awaitRootPartFromPlayer(player: Player) {
 	} while (!root);
 
 	return root;
+}
+
+export function getCharacterByUserId(userId: number) {
+	const player = Players.GetPlayerByUserId(userId);
+	if (!player) return;
+
+	return player.Character;
 }
